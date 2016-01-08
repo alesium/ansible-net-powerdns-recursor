@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/sperreault/ansible-net-djbdns.svg?branch=master)](https://travis-ci.org/sperreault/ansible-net-djbdns)
+[![Build Status](https://travis-ci.org/sperreault/ansible-net-powerdns-recursor.svg)](https://travis-ci.org/sperreault/ansible-net-powerdns-recursor)
 
 net-djbdns
 =========
