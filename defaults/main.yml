@@ -1,0 +1,16 @@
+net_powerdns_recursor_packages:
+        - "pdns-recursor"
+net_powerdns_recursor_config_file_src: "recursor.conf.j2"
+net_powerdns_recursor_config_file_dest: "/opt/local/etc/recursor.conf"
+net_powerdns_recursor_config_local_address: "0.0.0.0"
+net_powerdns_recursor_config_local_port: "53"
+net_powerdns_recursor_username: "root"
+net_powerdns_recursor_groupname: "root"
+net_powerdns_recursor_service_name: "pkgsrc/pdns-recursor"
+net_powerdns_recursor_SmartOS_service_instance: "default"
+#
+# Optional
+# Depends on own recursor.conf.j2
+#
+net_powerdns_recursor_root_hints_url: "ftp://ftp.internic.net/domain/named.cache"
+net_powerdns_recursor_root_hints_file: "/var/cache/root.hints"
