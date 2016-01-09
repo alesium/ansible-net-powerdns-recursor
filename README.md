@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/sperreault/ansible-net-powerdns-recursor.svg)](https://travis-ci.org/sperreault/ansible-net-powerdns-recursor)
+[![Build Status](https://travis-ci.org/alesium/ansible-net-powerdns-recursor.svg)](https://travis-ci.org/alesium/ansible-net-powerdns-recursor)
 
-net-djbdns
+net-powerdns-recursor
 =========
 
 Ansible Role to configure powerdns-recursor from pkgsrc
