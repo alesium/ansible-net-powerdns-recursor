@@ -7,7 +7,6 @@ net_powerdns_recursor_config_local_port: "53"
 net_powerdns_recursor_username: "root"
 net_powerdns_recursor_groupname: "root"
 net_powerdns_recursor_service_name: "pkgsrc/pdns-recursor"
-net_powerdns_recursor_SmartOS_service_instance: "default"
 #
 # Optional
 # Depends on own recursor.conf.j2
