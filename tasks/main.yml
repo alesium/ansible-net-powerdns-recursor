@@ -8,6 +8,13 @@
           - recursor
           - install
 
+- name: execute pre powerdns-recursor configuration tasks
+  include: "{{ net_powerdns_recursor_pre_include }}"
+  when: net_powerdns_recursor_pre_include is defined
+  tags:
+         - recursor
+         - update
+
 
 - name: copy powerdns-recursor configuration
   template: src="{{ net_powerdns_recursor_config_file_src }}" dest="{{ net_powerdns_recursor_config_file_dest }}" backup="yes" owner="{{ net_powerdns_recursor_username }}" group="{{ net_powerdns_recursor_groupname }}" mode="0644"
@@ -22,3 +29,10 @@
   tags:
           - recursor
           - update
+
+- name: execute post powerdns-recursor configuration tasks
+  include: "{{ net_powerdns_recursor_post_include }}"
+  when: net_powerdns_recursor_post_include is defined
+  tags:
+         - recursor
+         - update
