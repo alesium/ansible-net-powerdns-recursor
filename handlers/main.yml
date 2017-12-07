@@ -1,6 +1,0 @@
----
-- name: enable powerdns-recursor
-  service: name="{{ net_powerdns_recursor_service_name }}" state="started" enabled="yes"
-
-- name: restart powerdns-recursor
-  service: name="{{ net_powerdns_recursor_service_name }}" state="restarted"
